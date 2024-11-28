@@ -38,7 +38,6 @@ from pathlib import Path
 from os.path import exists
 from os import mkdir
 from os import unlink
-from os import unlink
 from time import sleep
 from time import localtime
 from time import time
@@ -67,8 +66,8 @@ from decorators import async_decorator
 
 from RVClient import Rlogin
 
-api_id = 11405596
-api_hash = "39ad6135ac9b75a47f2d1804c092c8f8"
+api_id = 7684605
+api_hash = "d270d70e8d3c3ad969ea6ecb5857e30b"
 bot_token = Bot_token
 Channel_Id = chanel_id
 bot = Client("bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)

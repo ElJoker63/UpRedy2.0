@@ -21,9 +21,6 @@ exceptiongroup
 frozenlist
 googledrivedownloader
 h11
-idna
-inflate64
-install
 lxml
 git+https://github.com/ElJoker63/mega.py
 multidict
@@ -44,7 +41,7 @@ pycryptodomex
 pymegatools
 pyping
 pyppmd
-Pyrogram
+pyrogram
 PySocks
 python-socks
 python-telegram-bot
@@ -68,7 +65,7 @@ tornado
 trio
 tzdata
 tzlocal
-ujson=
+ujson
 urllib3
 user-agent
 wcwidth
