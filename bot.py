@@ -1515,14 +1515,14 @@ async def delete_draft_y_down_media(client: Client, message: Message):
             ms = await bot.send_message(
                 user_id, f"**💢 Borrando enlaces {p}/{t} . Espere por favor"
             )
-            if "medisur.sld.cu" in urls[0]:
+            if "revhabanera.sld.cu" in urls[0]:
                 connector = aiohttp.TCPConnector()
                 async with aiohttp.ClientSession(connector=connector) as session:
-                    host = "https://medisur.sld.cu/index.php/medisur/"
+                    host = "https://revhabanera.sld.cu/index.php/rhab/"
                     payload = payload = {}
-                    payload["source"] = "/index.php/medisur/user/profile"
-                    payload["username"] = "lazaro12"
-                    payload["password"] = "Lazaro12."
+                    payload["source"] = "/index.php/rhab/user/profile"
+                    payload["username"] = "eljoker63"
+                    payload["password"] = "33805157"
                     async with session.post(
                         host + "login/signIn", data=payload, ssl=False
                     ) as e:
@@ -2857,7 +2857,7 @@ async def medisur_api(file, usid, msg, username):
     try:
         zipssize = Configs[username]["z"] * 1024 * 1024
         filename = file.split("/")[-1]
-        host = "https://medisur.sld.cu/index.php/medisur/"
+        host = "https://revhabanera.sld.cu/index.php/rhab"
         filesize = Path(file).stat().st_size
         print(21)
         proxy = None  # Configs[username]["gp"]
@@ -2871,9 +2871,9 @@ async def medisur_api(file, usid, msg, username):
             connector = aiohttp_socks.ProxyConnector.from_url(proxy)
         async with aiohttp.ClientSession(connector=connector) as session:
             payload = payload = {}
-            payload["source"] = "/index.php/medisur/user/profile"
-            payload["username"] = "lazaro12"
-            payload["password"] = "Lazaro12."
+            payload["source"] = "/index.php/rhab/user/profile"
+            payload["username"] = "eljoker63"
+            payload["password"] = "33805157"
             async with session.post(
                 host + "login/signIn", data=payload, ssl=False
             ) as e:
@@ -2898,7 +2898,7 @@ async def medisur_api(file, usid, msg, username):
                             print(2)
                         payload = {
                             "submissionChecklist": "1",
-                            "sectionId": "17",
+                            "sectionId": "15",
                             "locale": "es_ES",
                             "checklist[]": ["0", "1", "2", "3", "4", "5"],
                             "copyrightNoticeAgree": "1",

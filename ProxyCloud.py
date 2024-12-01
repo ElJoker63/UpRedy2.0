@@ -20,4 +20,4 @@ def parse(text):
         
         return {'https':f'{type}://'+ip+':'+str(port)}
 
-ProxyCloud("socks5://127.0.0.1:9050")
+#ProxyCloud("socks5://127.0.0.1:9050")
